@@ -1,4 +1,6 @@
 Práctica 1: HTML.
+Integrantes: Benetti Sofia y Magliaro Violeta.
+
 Ejercicios
 Ejercitación 1 - Responder el siguiente cuestionario
 1. Qué es HTML, cuando fue creado, cuáles fueron las distintas versiones y cuál es la última?
