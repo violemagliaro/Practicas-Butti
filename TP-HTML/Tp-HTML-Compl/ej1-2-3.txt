@@ -1,0 +1,78 @@
+UTN - Entornos Gráficos
+Práctica Complementaria - HTML5
+
+Integrantes:
+	Magliaro Violeta
+	Benetti Sofía
+
+Ejercitación 1 - Responder el siguiente cuestionario
+	1. ¿Ventajas de HTML5?
+	2. ¿Por qué utilizarlo?
+	3. Nombre ventajas
+		El lenguaje HTML5 se usa para definir la estructura básica de una página web. Se introducen nuevas características para ayudar a los autores de aplicaciones Web, y se ha prestado especial atención a la definición de claros criterios de conformidad para los agentes de usuario (navega dores) en un esfuerzo por mejorar la interoperabilidad 
+		Ventajas:
+			Añade audio y video sin necesidad de usar Flash u otro reproductor multimedia.
+			Permite al sitio detectar la ubicación de cada usuario que ingresa al sitio web debido a la geolocalización (si el usuario no lo aprueba).
+			Se pueden crear animaciones en 2D gracias a la etiqueta <canvas>. se puede acceder a esta aplicación desde un ordenador, tablet o móvil (accesibilidad).
+			Es gratuito.
+			Código más ordenado.
+			Compatibilidad en navegadores.
+			Almacenamiento mejorado (la información se guarda en el navegador del usuario).
+			HMTL5 y el diseño adaptativo(Esta especificación para móviles puede hacerla desde el mismo documento HTML o puede emplear una framework especializada para mejorar tu productividad.)
+
+Ejercitación 2
+	2.A) ¿Qué formatos soporta ?
+	2.B) Crear un elemento audio
+	Ejemplo de src: https://html5tutorial.info/media/vincent.mp3
+		Los principales formatos de audio que puede reproducir HTML5 son:t
+		MP3 → .mp3
+		WAV → .wav
+		OGG → .ogg
+		AU
+		El soporte exacto depende del navegador, pero MP3 es el más compatible. 
+
+		<html>
+		    <head>
+			<meta charset="UTF-8">
+			<title>Ejercicio 2b</title>
+		    </head>
+		    <body>
+			    <audio controls src=" https://html5tutorial.info/media/vincent.mp3">
+
+			    </audio>
+			
+		    </body>
+
+
+		</html>
+
+Ejercitación 3
+	3.A) ¿Qué formatos soporta ?
+	3.B) Crear un elemento video
+	Ejemplo de src: https://www.w3schools.com/html/mov_bbb.mp4/ogg
+
+		Los formatos de video más comunes que puede reproducir HTML5 son:
+
+		MP4 → .mp4
+		WebM → .webm
+		Ogg → .ogg / .ogv
+		El más recomendable para empezar es MP4, porque tiene muy buena compatibilidad con los navegadores.
+		
+		<html>
+		    <head>
+			<link rel="stylesheet" href="estilo2b.css">
+			<meta charset="UTF-8">
+			<title>Ejercicio 3b</title>
+		    </head>
+		    <body>
+			    <video  width="640" height="360" 
+				controls
+				src=" https://www.w3schools.com/html/mov_bbb.mp4/ogg">
+
+			    </audio>
+			
+		    </body>
+
+
+		</html>
+

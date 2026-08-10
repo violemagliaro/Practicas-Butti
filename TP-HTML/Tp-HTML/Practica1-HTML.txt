@@ -1,0 +1,419 @@
+Práctica 1: HTML.
+Integrantes: Benetti Sofia y Magliaro Violeta.
+
+Ejercicios
+Ejercitación 1 - Responder el siguiente cuestionario
+1. Qué es HTML, cuando fue creado, cuáles fueron las distintas versiones y cuál es la última?
+HTML (HyperText Markup Language) es un lenguaje de marcado que se utiliza para la creación de paginas web. Es un estándar a cargo del World Wide Web Consortium que se impuso para la visualización de las mismas a nivel mundial, por lo que todos los navegadores lo adoptaron. Fue creado por Tim Berners-Lee en 1991, con el objetivo de compartir documentos científicos a través de la World Wide Web.
+Versiones de HTML:
+- HTML 	1.0 (1991): Fue la primera versión de HTML, creada por Tim Berners-Lee. Permitía crear páginas web muy simples con texto, títulos y 	enlaces. 	
+- HTML 	2.0 (1995): Fue la primera versión oficial estandarizada. Incorporó 	formularios y mejoró la compatibilidad entre navegadores. 	
+- HTML 	3.2 (1997): Añadió nuevas funcionalidades como tablas, applets de Java y mejoras en el formato del texto, permitiendo crear páginas más 	completas. 	
+- HTML 	4.0 (1997): Introdujo importantes avances como la integración con CSS para separar el contenido del diseño, soporte para scripts (JavaScript), mejoras en accesibilidad e internacionalización. 		
+- HTML 	4.01 (1999): 	Fue una revisión de HTML 4.0 que corrigió errores y mejoró la especificación. Se utilizó durante muchos años como estándar 	para el desarrollo web. 		
+- XHTML 1.0 (2000): 	Fue una versión de HTML basada en XML, con reglas de escritura más estrictas. Su objetivo era lograr un código más ordenado y 	compatible. 	
+- HTML5 (2014): Incorporó etiquetas semánticas como <header>, <section> y <footer>, soporte nativo para audio y video, gráficos mediante <canvas>, formularios mejorados y nuevas APIs para desarrollar aplicaciones 	web modernas. Es la versión vigente y continúa actualizándose como un Living Standard, es decir, un estándar que evoluciona de forma continua sin cambiar de nombre.
+
+2. ¿Cuáles son los principios básicos que el W3C recomienda seguir para la creación de documentos con HTML?
+Los principios básicos de diseño que recomienda el W3C para la creación de documentos con HTML son:
+- Separar la estructura de la presentación: HTML debe utilizarse para definir la 	estructura y el significado del contenido, mientras que la apariencia (colores, fuentes, diseño, etc.) debe definirse mediante hojas de estilo (CSS). Esta separación facilita el mantenimiento y la adaptación del documento a distintos dispositivos. 	
+- Considerar la accesibilidad universal: Los documentos deben ser accesibles para todos los usuarios, incluidas las personas con discapacidad. Además, deben poder visualizarse correctamente en diferentes navegadores, dispositivos y tecnologías de asistencia.
+- Facilitar el procesamiento por parte de los navegadores: Los documentos 	deben estar bien estructurados para que los navegadores puedan 	interpretarlos y mostrarlos de manera eficiente, por ejemplo, diseñando correctamente las tablas y utilizando un código HTML válido. 
+
+3. En las Especificaciones de HTML, ¿cuándo un elemento o atributo se considera desaprobado? ¿y obsoleto?
+Un elemento o atributo se considera desaprobado (deprecated) cuando su uso ya no es recomendado porque existe una alternativa mejor o más moderna. Aunque todavía puede ser reconocido por los navegadores para mantener la compatibilidad con páginas antiguas, se aconseja no utilizarlo en desarrollos nuevos. En cambio, un elemento o atributo se considera obsoleto (obsolete) cuando ya no forma parte del estándar vigente y no debe utilizarse, ya que puede dejar de ser compatible en futuras versiones de los navegadores.
+
+4. Qué es el DTD y cuáles son los posibles DTDs contemplados en la especificación de HTML 4.01?
+El DTD (Document Type Definition) era un conjunto de reglas que definía la estructura y los elementos permitidos en un documento HTML. En HTML 4.01 existían tres tipos de DTD: Strict, que permitía únicamente los elementos recomendados; Transitional, que además admitía elementos desaprobados para facilitar la compatibilidad con versiones anteriores; y Frameset, que incorporaba soporte para el uso de marcos (frames). En HTML5 ya no se utilizan DTDs, sino una declaración mucho más simple: <!DOCTYPE html>.
+
+5. ¿Qué son los metadatos y cómo se especifican en HTML?
+Los metadatos son datos que describen información sobre una página web, como el autor, la descripción, las palabras clave, la codificación de caracteres o la configuración de la visualización en dispositivos móviles. No son visibles para el usuario, pero son utilizados por los navegadores, los motores de búsqueda y otras aplicaciones. En HTML se especifican dentro del elemento <head>, principalmente mediante la etiqueta <meta> , aunque también forman parte de los metadatos elementos como <title>, <link> y <base>.
+
+Ejercitación 2.
+Analizar los siguientes segmentos de código indicando en qué sección del documento HTML se colocan, cuál es el efecto que producen y señalar cada uno de los elementos, etiquetas, y atributos (nombre y valor), aclarando si es obligatorio.
+
+2.a)
+<!-- Código controlado el día 12/08/2009 →
+Esta linea de código es un comentario, puede ir en cualquier parte del documento ya que no produce ningun efecto visible en la página web.
+
+2.b)
+<div id="bloque1">Contenido del bloque1</div>
+Esta linea de código se coloca en el <body> ya que es un contenedor visible en la página.
+Elemento: <div id="bloque1">Contenido del bloque1</div>
+Etiqueta de apertura: <div id="bloque1">
+Contenido: Contenido del bloque1
+Etiqueta de cierre: </div>
+Atributo: id="bloque1"
+	Nombre: id
+	Valor: “bloque1”
+	
+2.c)
+<img src="" alt="lugar imagen" id="im1" name="im1" width="32" height="32"
+longdesc="detalles.htm" />
+Esta linea de código es visible en la página ya que muestra una imágen, por lo que se coloca en el <body>.
+Elemento: <img src="" alt="lugar imagen" id="im1" name="im1" width="32" height="32"
+longdesc="detalles.htm" />
+Etiqueta de apertura: <img>
+No tiene contenido ni etiqueta de cierre.
+Como src está vacío, no se carga ninguna imagen entonces aparecerá el texto alternativo indicado en el alt, en este caso es "lugar imagen".
+
+2.d)
+<meta name="keywords" lang="es" content="casa, compra, venta, alquiler " />
+<meta http-equiv="expires" content="16-Sep-2019 7:49 PM" />
+Estos son metadatos, por lo que estarán dentro de la etiqueta <head> y no serán visibles en la página web.
+Etiqueta de apertura: <meta>
+Al ser un elemento vacío no tiene contenido ni etiqueta de cierre.
+
+2.e)
+<a href="http://www.e-style.com.ar/resumen.html" type="text/html" hreflang="es" charset="utf-8"
+rel="help">Resumen HTML </a>
+Esta línea de código es un elemento que sirve para crear un hipervínculo o enlace con hacia otra página web, por lo que permite que un texto o imagen se convierta en un enlace clickeable. Se coloca dentro de la sección <body> y será contenido visible e interactivo para el usuario en la página.
+Etiqueta de apertura: <a>
+Contenido: Resumen HTML
+Etiqueta de cierre: </a>
+ATRIBUTOS
+	1. href
+	   Valor: http://www.e-style.com.ar/resumen.html
+	   Función: Indica la dirección del recurso al que lleva el enlace.
+	   ¿Es obligatorio?: Sí
+
+	2. type
+	   Valor: text/html
+	   Función: Indica el tipo de contenido del recurso enlazado.
+	   ¿Es obligatorio?: No
+
+	3. hreflang
+	   Valor: es
+	   Función: Indica el idioma del documento al que apunta el enlace.
+	   ¿Es obligatorio?: No
+
+	4. charset
+	   Valor: utf-8
+	   Función: Indica la codificación de caracteres del recurso enlazado.
+	   ¿Es obligatorio?: No (actualmente obsoleto en <a>)
+
+	5. rel
+	   Valor: help
+	   Función: Indica la relación entre el documento actual y el recurso enlazado.
+	   ¿Es obligatorio?: No
+
+
+2.f)
+<table width="200" summary="Datos correspondientes al ejercicio vencido">
+	<caption align="top"> Título </caption>
+	<tr>
+		<th scope="col">&nbsp;</th>
+		<th scope="col">A</th>
+		<th scope="col">B</th>
+		<th scope="col">C</th>
+	</tr>
+	<tr>
+		<th scope="row">1º</th>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<th scope="row">2º</th>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+	</tr>
+</table>
+
+
+Esta sección se coloca dentro del body, ya que es una tabla la cual es visible para el usuario.
+
+ETIQUETAS
+
+	1. <table>
+	   Función: Crea la tabla principal.
+
+	2. <caption>
+	   Función: Define el título o descripción de la tabla.
+
+	3. <tr> (table row)
+	   Función: Define una fila de la tabla.
+
+	4. <th> (table header)
+	   Función: Define una celda de encabezado. Generalmente aparece en negrita
+	   y sirve para títulos de filas o columnas.
+
+	5. <td> (table data)
+	   Función: Define una celda común donde se colocan los datos.
+
+ATRIBUTOS
+	1. width
+	   Valor: 200
+	   Etiqueta: <table>
+	   Función: Define el ancho de la tabla en píxeles.
+	   ¿Es obligatorio?: No
+
+	2. summary
+	   Valor: Datos correspondientes al ejercicio vencido
+	   Etiqueta: <table>
+	   Función: Proporciona una descripción de la tabla para accesibilidad.
+	   ¿Es obligatorio?: No
+
+	3. align
+	   Valor: top
+	   Etiqueta: <caption>
+	   Función: Indica la posición del título en la tabla.
+	   ¿Es obligatorio?: No
+
+	4. scope
+	   Valor: col
+	   Etiqueta: <th>
+	   Función: Indica que el encabezado corresponde a una columna.
+	   ¿Es obligatorio?: No
+
+	5. scope
+	   Valor: row
+	   Etiqueta: <th>
+	   Función: Indica que el encabezado corresponde a una fila.
+	   ¿Es obligatorio?: No
+
+Luego aparece “&nbsp;” pero no es una etiqueta ni un atributo, es una entidad HTML que representa un espacio en blanco no separable. Se usa para dejar una celda vacía manteniendo su estructura.
+
+
+Ejercitación 3
+En cada caso, explicar las diferencias entre los segmentos de código y sus visualizaciones:
+3.a)
+<a href="http://www.google.com.ar">Click aquí para ir a Google</a> (1)
+<a href="http://www.google.com.ar" target="_blank">Click aquí para ir a Google</a> (2)
+<a href="http://www. google.com.ar" type="text/html" hreflang="es" charset="utf-8" rel="help"> (3)
+<a href="#">Click aquí para ir a Google</a> (4)
+<a href="#arriba">Click aquí para volver arriba</a> (5)
+<a name="arriba" id="arriba"></a> (6)
+
+(1) Crea un enlace hacia Google que se abre en la misma pestaña actual.
+(2) Es igual al anterior, pero con target=”_blank” hace que Google se abra en una nueva pestaña.
+(3) Agrega atributos (type, hreflang, charset, rel) que brindan información sobre el recurso enlazado, pero no cambian la visualización.
+(4) href=”#” crea un enlace interno que lleva al inicio de la misma página.
+(5) href=”#arriba” crea un enlace hacia una ubicación específica dentro del documento.
+(6) Define el punto de destino llamado "arriba" mediante los atributos “name” e “id”, permitiendo que el enlace (5) lleve hasta allí.
+
+
+3.b)
+<p><img src="im1.jpg" alt="imagen1" /><a href="http://www.google.com.ar">Click aquí</a></p> (1)
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" /></a> Click aquí</p> (2)
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="ima
+gen1" />Click aquí</a></p> (3)
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" /></a> <a
+href="http://www.google.com.ar">Click aquí</a></p> (4)
+
+(1) La imagen y el texto son elementos separados: la imagen se muestra y solo el texto "Click aquí" funciona como enlace hacia Google.
+(2) La imagen está dentro del enlace, por lo tanto al hacer clic sobre la imagen se accede a Google, mientras que el texto queda fuera y no es parte del enlace.
+(3) Tanto la imagen como el texto "Click aquí" están dentro del enlace, por lo que ambos permiten acceder a Google.
+(4) La imagen y el texto son dos enlaces independientes hacia Google; se puede hacer clic tanto en la imagen como en el texto por separado.
+
+3.c)
+(1)
+<ul>
+<li>xxx</li>
+<li>yyy</li>
+<li>zzz</li>
+</ul>
+
+(2)
+<ol>
+<li>xxx</li>
+<li>yyy</li>
+<li>zzz</li>
+</ol>
+
+
+(3)
+<ol>
+<li>xxx</li>
+</ol>
+<ol>
+<li value="2">yyy</li>
+</ol>
+<ol>
+<li
+value="3">zzz</li>
+</ol>
+
+(4)
+<blockquote>
+<p>1. xxx<br />
+2. yyy<br />
+3. zzz</p>
+</blockquote>
+
+(1) Crea una lista no ordenada mediante <ul>, donde los elementos aparecen con viñetas.
+(2) Crea una lista ordenada mediante <ol>, donde los elementos se numeran automáticamente como 1, 2 y 3.
+(3) Son listas ordenadas separadas, pero mediante el atributo “value” dentro de <li> se puede indicar manualmente el número de cada elemento.
+(4) Crea un bloque de cita mediante <blockquote> con un párrafo separado por saltos de línea; aunque visualmente parece una lista numerada, no es una lista HTML real porque los números están escritos manualmente.
+3.d)
+(1) Utiliza <th> para definir los encabezados de la tabla, por lo que el navegador los reconoce como títulos de columnas y aplica un formato predeterminado (negrita y centrado).
+(2) Utiliza <td>, por lo que esas celdas son consideradas datos comunes, aunque visualmente se ven similares porque se aplican estilos con “div” y “strong”.
+
+3.e)
+(1) Utiliza <caption>, que es el elemento destinado a definir el título de una tabla, por lo que el texto aparece fuera de la estructura de las celdas y como encabezado de la tabla.
+(2) El título se coloca dentro de una celda de la tabla utilizando “colspan” para ocupar las tres columnas, por lo que forma parte de la estructura de la tabla.
+
+3.f)
+(1) El atributo rowspan="2" permite combinar dos filas, por lo que la primera celda ocupa verticalmente el espacio de dos filas.
+(2) El atributo colspan="2" permite combinar dos columnas, haciendo que una celda ocupe el ancho de dos columnas.
+
+3.g)
+(1) La primera tabla combina una celda en sentido horizontal y vertical al mismo tiempo mediante colspan y rowspan, ocupando un área más grande dentro de la tabla.
+(2) La segunda tabla tiene una estructura similar, pero utiliza cellpadding y cellspacing para controlar los espacios internos y externos de las celdas.
+
+3.h)
+(1) Usa un formulario de login que envía los datos mediante “post” a un archivo PHP, utilizando un campo “password” para ocultar la clave.
+(2) Envía los datos mediante “get”, mostrando la información en la URL y utiliza <label> para relacionar los textos con los campos.
+(3) Envía la información por correo electrónico mediante “mailto” y el botón no envía los datos sino que reinicia el formulario.
+
+3.i)
+(1) El botón creado con <button> permite incluir contenido dentro, como imágenes, texto con formato u otros elementos HTML, por eso es más flexible para diseñar botones personalizados.
+(2) El botón creado con <input> es más limitado, ya que solo muestra el texto indicado en “value”.
+
+3.j)
+(1) Los botones de opción funcionan como un grupo porque comparten el mismo atributo “name”, entonces al seleccionar uno el otro se desmarca automáticamente.
+(2) Al tener distintos valores de “name”, HTML los interpreta como grupos separados y permite seleccionar ambos al mismo tiempo.
+
+3.k)
+(1) Crea una lista de selección simple, donde el usuario puede elegir solamente una opción entre las disponibles.
+(2) Crea una lista de selección múltiple, permitiendo elegir más de una opción a la vez.
+
+Ejercitación 4
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejercicio 4</title>
+    </head>
+
+    <body>
+
+        <img src="images.jpeg" alt="Logo UTN" width="120" height="100">
+        <hr>
+        <h1>AÑO 2026</h1>
+        <table width="400" border="1" cellspacing="0">
+            <tr>
+                <td colspan="2" align="center">
+                    <b>Exámenes</b>
+                </td>
+            </tr>
+
+            <tr>
+                <td rowspan="2" width="50%">
+                    Fecha: ..............................
+                </td>
+
+                <td width="50%" align="right">
+                    Aprobados
+                </td>
+            </tr>
+
+            <tr>
+                <td width="50%" align="right">
+                    24/30
+                </td>
+            </tr>
+
+        </table>
+
+        <ol>
+
+            <li>
+                <a href="#enunciado">Enunciado del examen</a>
+            </li>
+
+            <li>
+                <a href="resolucion.html" target="_blank">Resolución</a>
+            </li>
+
+        </ol>
+
+        <br>
+        <br>
+
+        <p>
+            Puede realizar consultas completando el siguiente formulario:
+        </p>
+
+        <form action="mailto:x@x.com">
+
+            <table>
+
+                <tr>
+                    <td align="right">
+                        <label for="email">
+                            <b>e-mail:</b>
+                        </label>
+                    </td>
+
+                    <td>
+                        <input type="text" name="email" id="email">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td align="right">
+                        <label for="cons">
+                            <b>consulta:</b>
+                        </label>
+                    </td>
+
+                    <td>
+                        <input type="text" name="consulta" id="cons">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+
+                    <td>
+                        <button type="submit">
+                            <font size="4">
+                                <b>ENVIAR</b>
+                            </font>
+                        </button>
+
+                        <button type="reset">
+                            <font size="4">
+                                <b>BORRAR</b>
+                            </font>
+                        </button>
+                    </td>
+                </tr>
+
+            </table>
+
+        </form>
+
+        <br>
+        <br>
+
+        <h2 id="enunciado">
+            Enunciado del examen
+        </h2>
+
+        <p>
+            Ejercicio 1: ..................................
+            <br>
+            ........................................................
+        </p>
+
+        <p>
+            Ejercicio 2: ..................................
+            <br>
+            ........................................................
+        </p>
+
+        <br>
+        <br>
+
+        <p>
+            Para más información dirigirse a
+            <a href="mailto:contacto@xx.com">contacto@xx.com</a>
+        </p>
+
+    </body>
+</html>
+
+
