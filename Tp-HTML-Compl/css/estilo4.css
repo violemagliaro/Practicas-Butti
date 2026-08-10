@@ -1,0 +1,24 @@
+body {
+    display: flex;
+    /*convierte al body en un contenedor flexible.*/
+    justify-content: center;
+    /*centra el formulario horizontalmente*/
+    align-items: center;
+    /*centra el formulario verticalmente*/
+    flex-direction: column;
+    /*acomoda los elementos de arriba hacia abajo, no uno al lado del otro.*/
+    min-height: 100vh;
+    /*viewport height=altura de la pantalla.100vh = 100% de la altura visible del navegador*/
+    background-color: white;
+}
+
+
+.formulario {
+    border: 1px solid rgb(245, 115, 115);
+    /*border crea el recuadro, 1px de grosor, solid-línea continua, black color.*/
+    padding: 30px;
+    /*padding: 30px crea espacio entre el contenido y el borde.*/
+    text-align: center;
+    /*centra el contenido de texto y también elementos en línea como los input.*/
+    
+}
