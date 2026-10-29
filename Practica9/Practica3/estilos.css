@@ -1,0 +1,10 @@
+.encabezado { background-color: #a67fa8; height: 60px; }
+.sidebar { background-color: #f3d8ce; min-height: 300px; }
+.verde { background-color: #60c981; }
+.gris { background-color: #a397a1; height: 100%; padding: 6px; }
+.imagen-card { height: 110px; object-fit: cover; }
+.card-title { font-size: 1rem; }
+.card-text { font-size: 0.875rem; }
+.celeste { background-color: #7da1cc; min-height: 135px; height: 100%; }
+.carousel-item img { height: 190px; object-fit: cover; }
+@media (max-width: 767.98px) { .sidebar { min-height: 90px; } }
