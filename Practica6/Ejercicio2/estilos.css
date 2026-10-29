@@ -1,0 +1,112 @@
+
+/* EJERCICIO 2 - PRÁCTICA 6 */
+/* Estilos generales */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    margin: 0 auto;
+    padding: 40px 20px;
+    max-width: 1100px;
+}
+
+h1 {
+    color: #263b63;
+    margin-bottom: 25px;
+}
+
+h2 {
+    color: #40577c;
+}
+
+/* Enlaces */
+
+a {
+    color: #2563a6;
+    text-decoration: none;
+    margin-right: 12px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Formularios */
+
+form {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    max-width: 450px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #2563a6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #194b80;
+}
+
+/* Tablas */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th,
+td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #263b63;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f0f3f8;
+}
+
+/* Paginación */
+
+.paginacion {
+    margin-top: 25px;
+}
+
+.paginacion a {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
