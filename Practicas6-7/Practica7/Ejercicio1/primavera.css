@@ -1,0 +1,29 @@
+body {
+    background-color: #fff2f7;
+    color: #60445a;
+    font-family: Georgia, serif;
+    padding: 30px;
+}
+
+h1, h2 {
+    color: #c45c91;
+}
+
+form {
+    background-color: #ffe0ec;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+select, button {
+    padding: 10px;
+    margin: 10px;
+}
+
+button {
+    background-color: #d978a6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
